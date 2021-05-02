@@ -14,6 +14,7 @@ h2 {
     font-family: $font-family-Josefin;
     font-size: calc(1.325rem + 0.9vw);
     font-weight: 700;
+    color: $text-color;
 }
 @media (min-width: 1200px) {
     h2 {

@@ -1,0 +1,37 @@
+.product-card-small {
+    width: 270px;
+    height: 361px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    background-color: $color-white;
+    margin: 15px;
+    .product-img {
+        width: 100%;
+        height: 236px;
+        background: #F6F7FB;
+        @include display-flex(center,center);
+        img {
+            width: 60%;
+        }
+    }
+    .product-info {
+        @include display-flex(center, center);
+        flex-direction: column;
+        .product-title {
+            font-weight: 700;
+            font-size: 18px;
+            color: $acent-color;
+            padding-top: 15px;
+        }
+        .product-cod {
+            font-family: $font-family-Josefin;
+            font-size: 14px;
+            color: $text-color;
+            padding-top: 28px;
+        }
+        .product-price {
+            font-size: 14px;
+            color: $text-color;
+            padding-top: 12px;
+        }
+    }
+}

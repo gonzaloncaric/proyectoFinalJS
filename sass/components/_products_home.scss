@@ -1,0 +1,15 @@
+@import "./productCard";
+
+.products-home {
+    @include display-flex(center, center);
+    flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    h2 {
+        margin-bottom: 48px;
+    }
+    .products-container {
+        @include display-flex(center, center);
+        flex-wrap: wrap;
+    }
+}
