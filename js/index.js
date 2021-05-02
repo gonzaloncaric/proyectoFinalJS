@@ -9,6 +9,11 @@ function showProducts(array) {
         let div = document.createElement('div')
         div.classList.add('product-card-small')
         div.innerHTML = `
+            <div class="product-options">
+                <div class="cart-icon-container">
+                    <img class="cart-icon" src="../images/icons/fluent_cart-24-regular.svg" alt="">
+                </div>
+            </div>
             <div class="product-img">
                 <img src=${product.image} alt="">
             </div>
