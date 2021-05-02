@@ -212,6 +212,9 @@ a {
   top: 11px;
   left: 11px;
   cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: #F6F7FB;
 }
 .product-card-small .product-options .cart-icon-container .cart-icon {
   height: 24px;
@@ -257,7 +260,8 @@ a {
   background-color: #2F1AC4;
   transition: all 0.3s ease;
 }
-.product-card-small:hover .product-info .product-cod, .product-card-small:hover .product-info .product-price {
+.product-card-small:hover .product-info .product-cod,
+.product-card-small:hover .product-info .product-price {
   color: #ffffff;
   transition: all 0.3s ease;
 }

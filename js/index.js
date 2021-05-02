@@ -10,9 +10,9 @@ function showProducts(array) {
         div.classList.add('product-card-small')
         div.innerHTML = `
             <div class="product-options">
-                <div class="cart-icon-container">
+                <button onclick=addToCart() class="cart-icon-container">
                     <img class="cart-icon" src="../images/icons/fluent_cart-24-regular.svg" alt="">
-                </div>
+                </button>
             </div>
             <div class="product-img">
                 <img src=${product.image} alt="">
@@ -25,4 +25,8 @@ function showProducts(array) {
             `
         productsContainer.appendChild(div)
     });
+}
+
+function addToCart() {
+    console.log("click")
 }
