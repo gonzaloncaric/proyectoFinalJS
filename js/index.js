@@ -30,3 +30,23 @@ function showProducts(array) {
 function addToCart() {
     console.log("click")
 }
+
+const viewCart = document.getElementsByClassName('cart-button')[0]
+const openCart = document.getElementsByClassName('cart-container')[0]
+
+viewCart.addEventListener('click', () => {
+    openCart.classList.toggle('cart-container-active')
+})
+
+const closeCart = document.getElementById('close-cart')
+const cart = document.getElementsByClassName('bg-view-cart')[0]
+
+closeCart.addEventListener('click', () => {
+    openCart.classList.toggle('cart-container-active')
+})
+openCart.addEventListener('click', () => {
+    openCart.classList.toggle('cart-container-active')
+})
+cart.addEventListener('click', (event) => {
+    event.stopPropagation()
+})
