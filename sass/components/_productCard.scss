@@ -78,3 +78,46 @@
         }
     }
 }
+
+.items-view-cart {
+    .preview {
+        font-size: 16px;
+        color: lightgray;
+        font-weight: 700;
+        padding-bottom: 27px;
+    }
+    .product-item-cart {
+        @include display-flex(space-between, center);
+        margin-bottom: 10px;
+        .item-img {
+            width: 100px;
+            height: 100px;
+            background: #F6F7FB;
+            @include display-flex(center, center);
+            img {
+                width: 60%;
+            }
+        }
+        .product-item-info {
+            width: 100%;
+            padding: 20px;
+            .product-title {
+                font-weight: 700;
+                font-size: 18px;
+                color: $acent-color;
+                padding-top: 0px;
+            }
+            .product-cod {
+                font-family: $font-family-Josefin;
+                font-size: 14px;
+                color: $text-color;
+                padding-top: 16px;
+            }
+            .product-price {
+                font-size: 14px;
+                color: $text-color;
+                padding-top: 12px;
+            }
+        }
+    }
+}
