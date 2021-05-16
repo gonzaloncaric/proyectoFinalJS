@@ -394,10 +394,10 @@ a {
   align-items: center;
   flex-direction: column;
   margin-top: 100px;
-  margin-bottom: 100px;
+  margin-bottom: 30px;
 }
 .products-home h2 {
-  margin-bottom: 48px;
+  margin-bottom: 40px;
 }
 .products-home .products-container {
   display: flex;
@@ -473,6 +473,40 @@ a {
 .product-card-photo:hover .product-options .cart-icon-container {
   background-color: #e5ebf1;
   transition: all 0.3s ease;
+}
+
+.beneficios-container {
+  margin-bottom: 40px;
+  text-align: center;
+}
+.beneficios-container .beneficios-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.beneficios-container .beneficios-card-container .beneficios-card {
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+  width: 270px;
+  height: 320px;
+  padding: 26px;
+  margin: 15px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.beneficios-container .beneficios-card-container .beneficios-card .beneficios-card-info h3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  color: #151875;
+}
+.beneficios-container .beneficios-card-container .beneficios-card .beneficios-card-info p {
+  font-weight: 800;
+  font-size: 16px;
+  color: #1A0B5B30;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,31 @@
+.beneficios-container {
+    margin-bottom: 40px;
+    text-align: center;
+    .beneficios-card-container {
+        @include display-flex(center, center);
+        flex-wrap: wrap;
+        .beneficios-card {
+            box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+            width: 270px;
+            height: 320px;
+            padding: 26px;
+            margin: 15px;
+            text-align: center;
+            @include display-flex(center, center);
+            flex-direction: column;
+            .beneficios-card-info {
+                h3 {
+                    font-family: $font-family-Josefin;
+                    font-weight: 600;
+                    font-size: 22px;
+                    color: #151875;
+                }
+                p {
+                    font-weight: 800;
+                    font-size: 16px;
+                    color: #1A0B5B30;
+                }
+            }
+        }
+    }
+}

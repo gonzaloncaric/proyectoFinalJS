@@ -1,12 +1,11 @@
 @import "./productCard";
-
 .products-home {
     @include display-flex(center, center);
     flex-direction: column;
     margin-top: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 30px;
     h2 {
-        margin-bottom: 48px;
+        margin-bottom: 40px;
     }
     .products-container {
         @include display-flex(center, center);
