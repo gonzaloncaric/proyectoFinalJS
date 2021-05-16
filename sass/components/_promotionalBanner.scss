@@ -1,0 +1,48 @@
+.bg-banner-promocional {
+    background-color: #F1F0FF;
+    .banner-promocional-container {
+        @include display-flex(center, center);
+        .banner-promocional-info {
+            h3 {
+                font-family: $font-family-Josefin;
+                font-weight: 800;
+                font-size: 35px;
+                color: $text-color;
+            }
+            ul {
+                list-style: none;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 20px;
+                color: #ACABC3;
+                padding-left: 20px;
+                li::before {
+                    padding-bottom: 20px;
+                    content: "\2022";
+                    color: $acent-color;
+                    font-weight: 900;
+                    display: inline-block;
+                    width: 20px;
+                    margin-left: -1em;
+                }
+            }
+            .banner-promocional-info-btn {
+                @include display-flex(none, center);
+                .banner-promocional-info-btn-info {
+                    padding-left: 20px;
+                    .btn-info-title {
+                        font-family: $font-family-Josefin;
+                        font-weight: 600;
+                        font-size: 14px;
+                        color: #151875;
+                    }
+                    .btn-info-price {
+                        padding-top: 5px;
+                        font-size: 14px;
+                        color: #151875;
+                    }
+                }
+            }
+        }
+    }
+}

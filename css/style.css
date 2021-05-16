@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* CONTENIDOS DEL CSS */
 /* GENERALES */
 /* GENERALES */
@@ -507,6 +508,57 @@ a {
   font-weight: 800;
   font-size: 16px;
   color: #1A0B5B30;
+}
+
+.bg-banner-promocional {
+  background-color: #F1F0FF;
+}
+.bg-banner-promocional .banner-promocional-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bg-banner-promocional .banner-promocional-container .banner-promocional-info h3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 800;
+  font-size: 35px;
+  color: #151875;
+}
+.bg-banner-promocional .banner-promocional-container .banner-promocional-info ul {
+  list-style: none;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ACABC3;
+  padding-left: 20px;
+}
+.bg-banner-promocional .banner-promocional-container .banner-promocional-info ul li::before {
+  padding-bottom: 20px;
+  content: "•";
+  color: #fb2e86;
+  font-weight: 900;
+  display: inline-block;
+  width: 20px;
+  margin-left: -1em;
+}
+.bg-banner-promocional .banner-promocional-container .banner-promocional-info .banner-promocional-info-btn {
+  display: flex;
+  justify-content: none;
+  align-items: center;
+}
+.bg-banner-promocional .banner-promocional-container .banner-promocional-info .banner-promocional-info-btn .banner-promocional-info-btn-info {
+  padding-left: 20px;
+}
+.bg-banner-promocional .banner-promocional-container .banner-promocional-info .banner-promocional-info-btn .banner-promocional-info-btn-info .btn-info-title {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: #151875;
+}
+.bg-banner-promocional .banner-promocional-container .banner-promocional-info .banner-promocional-info-btn .banner-promocional-info-btn-info .btn-info-price {
+  padding-top: 5px;
+  font-size: 14px;
+  color: #151875;
 }
 
 /*# sourceMappingURL=style.css.map */
