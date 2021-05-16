@@ -1,10 +1,13 @@
 /* CONTENIDOS DEL CSS */
 
+
 /* GENERALES */
+
 // BASES
 //COMPONENTES
 
 /* GENERALES */
+
 * {
     box-sizing: border-box;
     scroll-behavior: smooth;
@@ -17,31 +20,31 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+
 /* BASES */
+
 // Variables
 @import "bases/variables";
-
 // Extends
 @import "bases/extends";
-
 // Mixins
 @import "bases/mixins";
 
 /* Contenedores */
+
 @import "mediaQuery/container";
 
 /* Fuentes */
-@import "bases/fonts";
 
+@import "bases/fonts";
 // Botones
 @import "./components/button.scss";
-
 // COMPONENTES
 // Nav
 @import "./components/nav";
-
 // Inicio
 @import "./components/inicio";
-
 //  Productos Destacados Home
 @import "./components/products_home";
+// Ultimos productos
+@import "./components/productCardPhoto";

@@ -1,6 +1,6 @@
+// Productos Destacados
 const productsContainer = document.getElementById('products-container')
-
-showProducts(products)
+showProducts(featuredProductsList)
 
 function showProducts(array) {
     productsContainer.innerHTML = ''
@@ -27,6 +27,35 @@ function showProducts(array) {
     });
 }
 
+// Ultimos productos
+const latestProducts = document.getElementById('latest-products')
+showLatestProducts(latestProductsList)
+
+function showLatestProducts(array) {
+    latestProducts.innerHTML = ''
+
+    array.forEach((product) => {
+        let div = document.createElement('div')
+        div.classList.add('product-card-photo')
+        div.innerHTML = `
+            <div class="product-options">
+                <button onclick=addToCart(${product.id}) class="cart-icon-container">
+                    <img class="cart-icon" src="../images/icons/fluent_cart-24-regular.svg" alt="">
+                </button>
+            </div>
+            <div class="product-img">
+                <img src=${product.image} alt="">
+            </div>
+            <div class="product-info">
+                <p class="product-title">${product.name}</p>
+                <p class="product-price">$ ${product.price}</p>
+            </div>
+            `
+        latestProducts.appendChild(div)
+    });
+}
+
+// Carrito de compras
 function addToCart(id) {
     const product = products.find(item => item.id == id)
     if (product) {
